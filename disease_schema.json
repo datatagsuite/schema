@@ -1,4 +1,5 @@
 {
+  "id": "https://w3id.org/dats/schema/disease_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "DATS disease schema",
   "description": "A disorder of structure or function in a human, animal, or plant, that produces specific symptoms or that affects a specific location.",

@@ -1,4 +1,5 @@
 {
+  "id": "https://w3id.org/dats/schema/annotation_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "DATS annotation schema",
   "description": "A pair of value (string or numeric) with a corresponding ontology term (IRI), if applicable.",

@@ -1,4 +1,5 @@
 {
+  "id": "https://w3id.org/dats/schema/place_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "DATS place schema",
   "description": "A spatially bounded entity.",

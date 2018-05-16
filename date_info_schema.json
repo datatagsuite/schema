@@ -1,4 +1,5 @@
 {
+  "id": "https://w3id.org/dats/schema/date_info_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "DATS date information schema.",
   "description": "Information about a calendar date or timestamp indicating day, month, year and time of an event.",

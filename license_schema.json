@@ -1,4 +1,5 @@
 {
+  "id": "https://w3id.org/dats/schema/license_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "DATS license schema",
   "description": "A legal document giving official permission to do something with a Resource. It is assumed that an external vocabulary will describe with sufficient granularity the permission for redistribution, modification, derivation, reuse, etc. and conditions for citation/acknowledgment.",

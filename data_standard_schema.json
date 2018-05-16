@@ -1,4 +1,5 @@
 {
+  "id": "https://w3id.org/dats/schema/data_standard_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "DATS data standard schema",
   "description": "A format, reporting guideline, terminology. It is used to indicate whether the dataset conforms to a particular community norm or specification.",

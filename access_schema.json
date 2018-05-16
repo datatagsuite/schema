@@ -1,4 +1,5 @@
 {
+  "id": "https://w3id.org/dats/schema/access_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "DATS access schema",
   "description": "Information about resources that provide the means to obtain an asset (a dataset or other research object).",

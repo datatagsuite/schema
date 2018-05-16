@@ -1,4 +1,5 @@
 {
+  "id": "https://w3id.org/dats/schema/biological_entity_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "DATS biological entity schema",
   "description": "A biological entity is a recognized entity covering biological process, molecular functions or cellular components (from: http://geneontology.org/).",

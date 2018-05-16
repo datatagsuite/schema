@@ -1,4 +1,5 @@
 {
+    "id": "https://w3id.org/dats/schema/data_acquisition_schema.json",
     "$schema": "http://json-schema.org/draft-04/schema",
     "title": "DATS data acquisition schema.",
     "description": "Process (or activity) of generating data through measurement made with specific techniques.",

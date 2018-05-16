@@ -1,4 +1,5 @@
 {
+  "id": "https://w3id.org/dats/schema/person_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "DATS person schema",
   "description": "A human being",

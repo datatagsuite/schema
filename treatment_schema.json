@@ -1,4 +1,5 @@
 {
+  "id": "https://w3id.org/dats/schema/treatment_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "DATS treatment schema",
   "description": "Process, part of a study, consisting in exposing participants to the study to different conditions or group those participants into different categories based on specific criteria and compare their outcomes",

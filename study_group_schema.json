@@ -1,4 +1,5 @@
 {
+  "id": "https://w3id.org/dats/schema/study_group_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "DATS study group schema",
   "description": "A collection of entities known as study subjects based on a set of specified criteria and rules; synonyms: population, cohort.",

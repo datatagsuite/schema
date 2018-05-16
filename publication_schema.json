@@ -1,4 +1,5 @@
 {
+  "id": "https://w3id.org/dats/schema/publication_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title" : "DATS publication schema",
   "description" : "A (digital) document made available by a publisher.",

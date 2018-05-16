@@ -1,4 +1,5 @@
 {
+  "id": "https://w3id.org/dats/schema/anatomical_part_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "DATS anatomical part schema",
   "description": "A structure that is part of a multicellular organism.",

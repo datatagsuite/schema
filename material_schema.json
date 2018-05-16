@@ -1,4 +1,5 @@
 {
+  "id": "https://w3id.org/dats/schema/material_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "DATS material schema",
   "description": "A physical entity.",

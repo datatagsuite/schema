@@ -1,4 +1,5 @@
 {
+  "id": "https://w3id.org/dats/schema/data_type_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "DATS Data Type schema",
   "description": "The nature of the data, as determined for the information collected, the method used and the platform used.",

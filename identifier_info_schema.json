@@ -1,4 +1,5 @@
 {
+  "id": "https://w3id.org/dats/schema/identifier_info_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "DATS identifier information schema",
   "description": "Information about the primary identifier.",
