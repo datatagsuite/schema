@@ -34,6 +34,18 @@
         "$ref": "related_identifier_info_schema.json#"
       }
     },
+    "relatedMolecularEntity": {
+      "description": "Related molecular entities.",
+      "type": "array",
+      "items": {
+         "$ref": "molecular_entity_schema.json#",
+         "relationType": {
+            "description": "The type of the relationship corresponding to this molecular entity.",
+            "type" : "string",
+            "format": "uri"
+         }
+      }
+    },
     "name": {
       "description": "The name of the molecular entity.",
       "type" :  "string"
