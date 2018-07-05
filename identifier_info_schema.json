@@ -19,8 +19,7 @@
     "@type": { "type": "string", "enum": [ "Identifier" ]},
     "identifier": {
       "description": "A code uniquely identifying an entity locally to a system or globally.",
-      "type" : "string",
-      "format": "uri"
+      "type" : "string"
     },
     "identifierSource": {
       "description": "The identifier source represents information about the organisation/namespace responsible for minting the identifiers. It must be provided if the identifier is provided.",
