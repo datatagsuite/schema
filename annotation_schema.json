@@ -26,6 +26,7 @@
       ]
     },
     "value": {
+      "description": "The value of the annotation - it can be a string or a number (for coded values).",
       "oneOf": [
         {
           "type": "string"
@@ -36,7 +37,8 @@
       ]
     },
     "valueIRI": {
-      "anyOf": [
+      "description": "The IRI of a concept or ontology term associated with the value. It can also be an empty string",
+         "anyOf": [
         {
           "type": "string",
           "format": "uri"
@@ -46,7 +48,7 @@
           "maxLength": 0
         }
       ]
-    },
-    "additionalProperties": false
-  }
+    }
+  },
+  "additionalProperties": false
 }
