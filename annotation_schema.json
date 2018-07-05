@@ -15,18 +15,38 @@
         }
       ]
     },
-    "@id": { "type": "string", "format": "uri" },
-    "@type": { "type": "string", "enum": [ "Annotation" ]},
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "string",
+      "enum": [
+        "Annotation"
+      ]
+    },
     "value": {
       "oneOf": [
-        { "type": "string" },
-        { "type": "number"}
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
       ]
     },
     "valueIRI": {
-      "type": "string",
-      "format": "uri"
-    }
-  },
-  "additionalProperties": false
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "uri"
+        },
+        {
+          "type": "string",
+          "maxLength": 0
+        }
+      ]
+    },
+    "additionalProperties": false
+  }
 }

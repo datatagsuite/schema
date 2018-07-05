@@ -23,8 +23,17 @@
     },
     "categoryIRI": {
       "description": "The IRI corresponding to the category, if associated with an ontology term.",
-      "type": "string",
-      "format": "uri"
+       "anyOf": [
+        {
+          "type": "string",
+          "format": "uri"
+        },
+        {
+          "type": "string",
+          "maxLength": 0
+        }
+      ]
+    },
     },
     "values": {
       "description": "A set of (annotated) values associated with the cateogory.",
