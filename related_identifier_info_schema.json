@@ -27,8 +27,15 @@
     },
     "relationType": {
       "description": "The type of the relationship corresponding to this identifier.",
-      "type" : "string",
-      "format": "uri"
+      "anyOf": [
+        { "type" : "string" },
+        { "type": "string",
+          "format": "uri"
+        },
+        {
+          "$ref": "annotation_schema.json#"
+        }
+      ]
     }
   },
   "additionalProperties": false
