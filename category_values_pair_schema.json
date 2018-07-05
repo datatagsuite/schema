@@ -34,7 +34,6 @@
         }
       ]
     },
-    },
     "values": {
       "description": "A set of (annotated) values associated with the cateogory.",
       "type": "array",
