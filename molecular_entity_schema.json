@@ -66,6 +66,18 @@
         "$ref": "annotation_schema.json#"
       }
     },
+    "relatedMolecularEntity": {
+      "description": "Related molecular entities.",
+      "type": "array",
+      "items": {
+        "$ref": "molecular_entity_schema.json#",
+        "relationType": {
+          "description": "The type of the relationship corresponding to this molecular entity.",
+          "type" : "string",
+          "format": "uri"
+        }
+      }
+    },
     "extraProperties": {
       "description": "Extra properties that do not fit in the previous specified attributes. ",
       "type": "array",
