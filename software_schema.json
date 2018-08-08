@@ -53,6 +53,13 @@
       "description": "A release point for the software.",
       "type" : "string"
     },
+    "dates" : {
+      "description": "Relevant dates, e.g. the release date of the software, may be provided.",
+      "type" : "array",
+      "items": {
+        "$ref" : "date_info_schema.json#"
+      }
+    }, 
     "isUsedBy" : {
       "description": "The data acquisition activity that makes use of this software.",
       "type" : "array",

@@ -38,6 +38,13 @@
       "description": "The name of the disease.",
       "type" :  "string"
     },
+    "dates" : {
+      "description": "Relevant dates, the diagnosis date of the disease may be provided.",
+      "type" : "array",
+      "items": {
+        "$ref" : "date_info_schema.json#"
+      }
+    }, 
     "extraProperties": {
       "description": "Extra properties that do not fit in the previous specified attributes. ",
       "type": "array",

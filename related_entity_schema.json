@@ -1,0 +1,45 @@
+{
+"id": "https://w3id.org/dats/schema/annotation_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "title": "DATS relatedEntity schema",
+  "description": "a ternary entity to expression a relationship between two entities",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "string",
+      "enum": ["relatedEntity"]
+    },
+    "subject": {
+               "$ref": "annotation_schema.json#"
+            },
+
+    "relation": {
+               "$ref": "annotation_schema.json#"
+            },
+    "object": {
+                "$ref": "annotation_schema.json#"
+            }
+         },
+    "resultingFrom": {
+        "$ref": "activitiy_schema.json#"
+    },
+    "relationConfidenceIndicator" : {
+        "$ref" : "annotation_schema.json#"
+    },
+  "required": ["relation","object"],
+  "additionalProperties": false
+  }
