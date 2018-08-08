@@ -63,7 +63,11 @@
       "description": "The pathology affecting the material used in the study or refered to in the dataset (ideally from a controlled vocabulary/ontology).",
       "type" : "array",
       "items" : {
-        "$ref" : "disease_schema.json#"
+        "anyOf": [
+          { "$ref" : "disease_schema.json#"},
+          { "type": "null" },
+          { "type": "string", "enum": [ "unknown" ]}
+        ]
       }
     },
     "taxonomy" : {
