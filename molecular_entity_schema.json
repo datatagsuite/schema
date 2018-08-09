@@ -59,9 +59,9 @@
       "description": "The set of location information of a genetic element in a genome.",
       "type" : "array",
       "items" : {
-          "$ref": "genome_location_schema.json#"     
+        "$ref": "genome_location_schema.json#"
       }
-    },    
+    },
     "structure": {
       "description": "The primary sequence of the molecular entity (e.g. inchi code;DNA sequence in FASTA format)",
       "type" :  "string"
@@ -74,29 +74,29 @@
       }
     },
     "involvedInProcess" : {
-      "description": "the molecular processes where the molecular entity is known to be involved",
+      "description": "The molecular processes where the molecular entity is known to be involved in.",
       "type": "array",
       "items":{
-        "$ref" : "activity.json#"
+        "$ref" : "activity_schema.json#"
       }
-    }, 
+    },
     "relatedEntities":{
-        "description" : "a set of associations involved the instance molecular entity to other entity. the nature of the relation and the object of the relation can be specified, as well as the methods used to assess the association and provide a confidence indicator for the assertion.",
-        "type" : "array",
-        "items" : {
-            "$ref" : "related_entity_schema.json#"
-        }
+      "description" : "a set of associations involved the instance molecular entity to other entity. the nature of the relation and the object of the relation can be specified, as well as the methods used to assess the association and provide a confidence indicator for the assertion.",
+      "type" : "array",
+      "items" : {
+        "$ref" : "related_entity_schema.json#"
+      }
     },
     "relatedMolecularEntity": {
       "description": "Related molecular entities.",
       "type": "array",
       "items": {
         "oneOf" : [
-             {"$ref": "molecular_entity_schema.json#"},
-             {"$ref": "disease_schema.json#"},
-             {"$ref": "material_entity_schema#"},
-             {"$ref": "activity_schema#"}
-          ],   
+          {"$ref": "molecular_entity_schema.json#"},
+          {"$ref": "disease_schema.json#"},
+          {"$ref": "material_entity_schema#"},
+          {"$ref": "activity_schema#"}
+        ],
         "relationType": {
           "description": "The type of the relationship corresponding to this molecular entity.",
           "type" : "string",
@@ -110,7 +110,7 @@
       "items" : {
         "$ref" : "date_info_schema.json#"
       }
-    },    
+    },
     "extraProperties": {
       "description": "Extra properties that do not fit in the previous specified attributes. ",
       "type": "array",

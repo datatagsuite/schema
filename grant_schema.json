@@ -70,12 +70,12 @@
       }
     },
     "dates" : {
-      "description": "Relevant dates, the date of the grant may be provided.",
+      "description": "Relevant dates, such as the date when the grant was awarded, may be provided.",
       "type" : "array",
       "items": {
         "$ref" : "date_info_schema.json#"
       }
-    },     
+    },
     "extraProperties": {
       "description": "Extra properties that do not fit in the previous specified attributes. ",
       "type": "array",

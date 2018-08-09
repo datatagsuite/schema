@@ -41,7 +41,7 @@
       "type" :  "string"
     },
     "dates" : {
-      "description": "Relevant dates, the date of the license may be provided.",
+      "description": "Relevant dates, such as the date of the license was issued, may be provided.",
       "type" : "array",
       "items": {
         "$ref" : "date_info_schema.json#"

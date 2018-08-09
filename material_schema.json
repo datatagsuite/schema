@@ -125,7 +125,7 @@
       }
     },
     "dates": {
-      "description": "Relevant dates, e.g the date when the material was harvested, may be provided.",
+      "description": "Relevant dates, such as the date when the material was harvested, may be provided.",
       "type": "array",
       "items": {
         "$ref": "date_info_schema.json#"
@@ -139,7 +139,7 @@
       }
     },
     "licenses": {
-      "description": "The terms of use of the dataset.",
+      "description": "The terms of use of the material.",
       "type": "array",
       "items": {
         "$ref": "license_schema.json#"
