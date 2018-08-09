@@ -59,7 +59,7 @@
       "items": {
         "$ref" : "date_info_schema.json#"
       }
-    }, 
+    },
     "isUsedBy" : {
       "description": "The data acquisition activity that makes use of this software.",
       "type" : "array",

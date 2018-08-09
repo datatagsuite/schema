@@ -44,7 +44,7 @@
       "items": {
         "$ref": "annotation_schema.json#"
       }
-    },    
+    },
     "size": {
       "description": "The number of members in the group.",
       "type" :  "number"
@@ -57,12 +57,12 @@
       }
     },
     "licenses": {
-            "description": "The terms of use of the dataset.",
-            "type": "array",
-            "items": {
-                "$ref": "license_schema.json#"
-            }
-   },   
+      "description": "The terms of use of the information on the study group.",
+      "type": "array",
+      "items": {
+        "$ref": "license_schema.json#"
+      }
+    },
     "extraProperties": {
       "description": "Extra properties that do not fit in the previous specified attributes. ",
       "type": "array",
