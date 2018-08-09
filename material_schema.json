@@ -15,8 +15,16 @@
         }
       ]
     },
-    "@id": { "type": "string", "format": "uri" },
-    "@type": { "type": "string", "enum": [ "Material" ]},
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@type": {
+      "type": "string",
+      "enum": [
+        "Material"
+      ]
+    },
     "identifier": {
       "$ref": "identifier_info_schema.json#"
     },
@@ -36,34 +44,43 @@
     },
     "name": {
       "description": "The name of the material.",
-      "type" :  "string"
+      "type": "string"
     },
-    "description" : {
+    "description": {
       "description": "A textual narrative comprised of one or more statements describing the material.",
-      "type" : "string"
+      "type": "string"
     },
-    "derivesFrom" : {
+    "derivesFrom": {
       "description": "A material from which this material originated.",
-      "type" : "array",
-      "items" : {
+      "type": "array",
+      "items": {
         "anyOf": [
-          { "$ref": "material_schema.json#"},
-          { "$ref": "anatomical_part_schema.json#" }
+          {
+            "$ref": "material_schema.json#"
+          },
+          {
+            "$ref": "anatomical_part_schema.json#"
+          }
         ]
       }
     },
     "spatialCoverage": {
       "description": "The spatial coordinates denoting the geospatial origin of the material used to produce measurements part of the dataset.",
-      "type" : "array",
-      "items" : {
-        "$ref" : "place_schema.json#"
+      "type": "array",
+      "items": {
+        "$ref": "place_schema.json#"
       }
     },
     "bearerOfDisease": {
       "description": "The pathology affecting the material used in the study or refered to in the dataset (ideally from a controlled vocabulary/ontology).",
       "anyOf": [
-        { "type": "null" },
-        { "type": "string", "enum": [ "unknown" ]},
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "enum": [ "unknown" ]
+        },
         {
           "type": "array",
           "items": {
@@ -72,7 +89,7 @@
         }
       ]
     },
-    "taxonomy" : {
+    "taxonomy": {
       "description": "The taxonomic information for this material (ideally specified from a controlled vocabulary/ontology).",
       "type": "array",
       "items": {
@@ -81,50 +98,56 @@
     },
     "involvedInBiologicalEntity": {
       "description": "A biological process (ideally specified from a controlled vocabulary/ontology) in which the material is involved.",
-      "type" : "array",
-      "items" : {
-        "$ref" : "biological_entity_schema.json#"
+      "type": "array",
+      "items": {
+        "$ref": "biological_entity_schema.json#"
       }
     },
-    "characteristics" : {
+    "characteristics": {
       "description": "The characteristic information or attributes denoting the material.",
-      "type" : "array",
-      "items" : {
+      "type": "array",
+      "items": {
         "oneOf": [
-          {"$ref" : "dimension_schema.json#"},
-          {"$ref" : "material_schema.json#"}
+          {
+            "$ref": "dimension_schema.json#"
+          },
+          {
+            "$ref": "material_schema.json#"
+          }
         ]
       }
     },
-    "roles" : {
+    "roles": {
       "description": "The roles played by a material.",
-      "type" : "array",
-      "items" : {
-        "$ref" : "annotation_schema.json#"
+      "type": "array",
+      "items": {
+        "$ref": "annotation_schema.json#"
       }
     },
-    "dates" : {
+    "dates": {
       "description": "Relevant dates, e.g the date when the material was harvested, may be provided.",
-      "type" : "array",
+      "type": "array",
       "items": {
-        "$ref" : "date_info_schema.json#"
+        "$ref": "date_info_schema.json#"
       }
-    }, 
+    },
     "extraProperties": {
       "description": "Extra properties that do not fit in the previous specified attributes. ",
       "type": "array",
       "items": {
-        "$ref" : "category_values_pair_schema.json#"
+        "$ref": "category_values_pair_schema.json#"
       }
-    }
-  },
- "licenses": {
-            "description": "The terms of use of the dataset.",
-            "type": "array",
-            "items": {
-                "$ref": "license_schema.json#"
-            }
-   },  
-  "additionalProperties": false,
-  "required": [ "name" ]
+    },
+    "licenses": {
+      "description": "The terms of use of the dataset.",
+      "type": "array",
+      "items": {
+        "$ref": "license_schema.json#"
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "name"
+    ]
+  }
 }
