@@ -61,10 +61,16 @@
     },
     "bearerOfDisease": {
       "description": "The pathology affecting the material used in the study or refered to in the dataset (ideally from a controlled vocabulary/ontology).",
-      "type" : "array",
-      "items" : {
-        "$ref" : "disease_schema.json#"
-      }
+      "anyOf": [
+        { "type": "null" },
+        { "type": "string", "enum": [ "unknown" ]},
+        {
+          "type": "array",
+          "items": {
+            "$ref": "disease_schema.json#"
+          }
+        }
+      ]
     },
     "taxonomy" : {
       "description": "The taxonomic information for this material (ideally specified from a controlled vocabulary/ontology).",
