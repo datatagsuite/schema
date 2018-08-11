@@ -96,6 +96,13 @@
         ]
       }
     },
+    "consentInformation": {
+      "description": "The consent information related to this material.",
+      "type": "array",
+      "items" : {
+        "$ref" : "consent_info_schema.json#"
+      }
+    },
     "roles" : {
       "description": "The roles played by a material.",
       "type" : "array",
