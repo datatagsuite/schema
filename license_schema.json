@@ -40,7 +40,7 @@
       "description": "The version of the license.",
       "type" :  "string"
     },
-    "approvers": {
+    "licensingAuthority": {
       "description": "The person(s) or organization(s) responsible for granting access to the data by approving the license.",
       "type" : "array",
       "items" : {
