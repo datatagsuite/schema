@@ -40,6 +40,16 @@
       "description": "The version of the license.",
       "type" :  "string"
     },
+    "licensingAuthority": {
+      "description": "The person(s) or organization(s) responsible for granting access to the data by approving the license.",
+      "type" : "array",
+      "items" : {
+        "oneOf": [
+          {"$ref" : "person_schema.json#"},
+          {"$ref" : "organization_schema.json#"}
+        ]
+      }
+    },
     "creators" : {
       "description": "The person(s) or organization(s) responsible for writing the license.",
       "type" : "array",
@@ -48,8 +58,7 @@
           {"$ref" : "person_schema.json#"},
           {"$ref" : "organization_schema.json#"}
         ]
-      },
-      "minItems" : 1
+      }
     },
     "extraProperties": {
       "description": "Extra properties that do not fit in the previous specified attributes. ",
