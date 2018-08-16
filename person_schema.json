@@ -35,7 +35,6 @@
         "$ref": "related_identifier_info_schema.json#"
       }
     },
-
     "fullName": {
       "description": "The first name, any middle names, and surname of a person.",
       "type" :  "string"

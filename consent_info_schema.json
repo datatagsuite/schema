@@ -16,7 +16,7 @@
       ]
     },
     "@id": { "type": "string", "format": "uri" },
-    "@type": { "type": "string", "enum": [ "License" ]},
+    "@type": { "type": "string", "enum": [ "Consent" ]},
     "identifier": {
       "$ref": "identifier_info_schema.json#"
     },
