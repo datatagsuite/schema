@@ -49,6 +49,13 @@
         "$ref" : "material_schema.json#"
       }
     },
+    "consentInformation": {
+      "description": "The consent information related to this study group.",
+      "type": "array",
+      "items" : {
+        "$ref" : "consent_info_schema.json#"
+      }
+    },
     "extraProperties": {
       "description": "Extra properties that do not fit in the previous specified attributes. ",
       "type": "array",

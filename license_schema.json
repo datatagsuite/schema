@@ -60,6 +60,13 @@
         ]
       }
     },
+    "dataUseConditions": {
+      "description": "Types of data use conditions extracted from the license documents. Data Use Conditions may refer to restrictions, prohibition, research topics as granted by the dataset, dimension, software license. Ideally specified from a controlled vocabulary or ontology, such as GA4GH Data Use Ontology (DUO: http://www.obofoundry.org/ontology/duo.html) or ADA-M matrix (https://github.com/ga4gh/ADA-M).",
+      "type": "array",
+      "items": {
+        "$ref": "annotation_schema.json#"
+      }
+    },
     "extraProperties": {
       "description": "Extra properties that do not fit in the previous specified attributes. ",
       "type": "array",
