@@ -40,9 +40,7 @@
     },
     "diseaseStatus": {
       "description": "A value (and ideally also an ontology annotation provided as a valueIRI) for the disease status.",
-      "type" :  {
-         "$ref": "annotation_schema.json#"
-      }
+      "$ref": "annotation_schema.json#"
     },
     "extraProperties": {
       "description": "Extra properties that do not fit in the previous specified attributes. ",
