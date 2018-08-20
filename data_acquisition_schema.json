@@ -12,6 +12,9 @@
                 },
                 {
                     "type": "object"
+                },
+                {
+                    "type": "array"
                 }
             ]
         },
