@@ -20,6 +20,10 @@
     },
     "@id": { "type": "string", "format": "uri" },
     "@type": { "type": "string", "enum": [ "AlternateIdentifier" ]},
+    "conformsTo": {
+      "type": "string",
+      "enum": [ "https://w3id.org/dats/schema/alternate_identifier_info_schema.json" ]
+    },
     "identifier": {
       "description": "An identifier or identifiers other than the primary Identifier applied to the resource being registered. (definition from DataCite)",
       "type" : "string"

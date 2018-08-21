@@ -20,6 +20,10 @@
     },
     "@id": { "type": "string", "format": "uri" },
     "@type": { "type": "string", "enum": [ "Provenance" ]},
+    "conformsTo": {
+            "type": "string",
+            "enum": [ "https://w3id.org/dats/schema/provenance_schema.json" ]
+        },
     "transformationFile": {
       "description": "The DataMed transformation file describing the mapping between the original repository and DATS.",
       "type": "string"

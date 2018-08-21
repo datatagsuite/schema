@@ -20,6 +20,10 @@
     },
     "@id": { "type": "string", "format": "uri" },
     "@type": { "type": "string", "enum": [ "RelatedIdentifier" ]},
+    "conformsTo": {
+            "type": "string",
+            "enum": [ "https://w3id.org/dats/schema/related_identifier_schema.json" ]
+        },
     "identifier": {
       "description": "An identifier of a related resource.",
       "type" : "string"

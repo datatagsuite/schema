@@ -20,6 +20,10 @@
     },
     "@id": { "type": "string", "format": "uri" },
     "@type": { "type": "string", "enum": [ "DataAnalysis" ]},
+    "conformsTo": {
+      "type": "string",
+      "enum": [ "https://w3id.org/dats/schema/data_analysis_schema.json" ]
+    },
     "identifier": {
       "$ref": "identifier_info_schema.json#"
     },

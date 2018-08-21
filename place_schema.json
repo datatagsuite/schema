@@ -30,6 +30,10 @@
     },
     "@id": { "type": "string", "format": "uri" },
     "@type": { "type": "string", "enum": [ "Place" ]},
+    "conformsTo": {
+            "type": "string",
+            "enum": [ "https://w3id.org/dats/schema/place_schema.json" ]
+        },
     "identifier": {
       "description": "Primary identifier for the place.",
       "$ref": "identifier_info_schema.json#"

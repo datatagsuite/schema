@@ -28,6 +28,10 @@
         "Annotation"
       ]
     },
+    "conformsTo": {
+      "type": "string",
+      "enum": [ "https://w3id.org/dats/schema/annotation_schema.json" ]
+    },
     "value": {
       "description": "The value of the annotation - it can be a string or a number (for coded values).",
       "oneOf": [
