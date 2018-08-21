@@ -83,27 +83,32 @@
         "$ref" : "activity_schema.json#"
       }
     },
-    "relatedEntities":{
-      "description" : "a set of associations involved the instance molecular entity to other entity. the nature of the relation and the object of the relation can be specified, as well as the methods used to assess the association and provide a confidence indicator for the assertion.",
-      "type" : "array",
-      "items" : {
-        "$ref" : "related_entity_schema.json#"
-      }
-    },
-    "relatedMolecularEntity": {
-      "description": "Related molecular entities.",
+    "relatedEntities": {
+      "description": "Entities that are related to this molecular entity.",
       "type": "array",
       "items": {
-        "oneOf" : [
-          {"$ref": "molecular_entity_schema.json#"},
-          {"$ref": "disease_schema.json#"},
-          {"$ref": "material_entity_schema#"},
-          {"$ref": "activity_schema#"}
-        ],
-        "relationType": {
+        "object":{
+          "description": "The object of the relationship, i.e. the representation or identifier of the related enttity",
+          "anyOf":[
+            {
+              "type": "object"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "relation": {
           "description": "The type of the relationship corresponding to this molecular entity.",
-          "type" : "string",
-          "format": "uri"
+          "$ref" : "annotation_schema.json#"
+        },
+        "resultingFrom": {
+          "description": "The activity (or process) that gave origin at the relationship between this molecular entity and the external entity.",
+          "$ref": "activity_schema.json#"
+        },
+        "relationEvidenceCode" : {
+          "description": "A label and ideally an ontology term IRI (e.g. for the Evidence & Conclusion Ontology - ECO) indicating the evidence for the relationship between the molecular entity and the external entity",
+          "$ref" : "annotation_schema.json#"
         }
       }
     },
