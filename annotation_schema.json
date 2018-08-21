@@ -12,6 +12,9 @@
         },
         {
           "type": "object"
+        },
+        {
+          "type": "array"
         }
       ]
     },
@@ -38,7 +41,7 @@
     },
     "valueIRI": {
       "description": "The IRI of a concept or ontology term associated with the value. It can also be an empty string",
-         "anyOf": [
+      "anyOf": [
         {
           "type": "string",
           "format": "uri"
