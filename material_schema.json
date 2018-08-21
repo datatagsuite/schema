@@ -137,13 +137,6 @@
         "$ref": "category_values_pair_schema.json#"
       }
     },
-    "licenses": {
-      "description": "The terms of use of the material.",
-      "type": "array",
-      "items": {
-        "$ref": "license_schema.json#"
-      }
-    },
     "additionalProperties": false,
     "required": [
       "name"
