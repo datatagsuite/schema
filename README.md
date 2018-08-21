@@ -12,6 +12,13 @@ In particular, you can visualise the schemas here: https://datatagsuite.github.i
 
 Previously, previous development of DATS can be found at this repository: https://github.com/datatagsuite/WG3-MetadataSpecifications
 
+DATS core entities are represented in this overview diagram:
+
+![alt text](https://github.com/datatagsuite/WG3-MetadataSpecifications/blob/master/doc/v2.2/DATS-v2.2-core-entities-required-attributes.cmap.svg "DATS overview")
+
+
+
+
 ## Publications
 - Xiaoling Chen, Anupama E Gururaj, Burak Ozyurt, Ruiling Liu, Ergin Soysal, Trevor Cohen, Firat Tiryaki, Yueling Li, Nansu Zong, Min Jiang, Deevakar Rogith, Mandana Salimi, Hyeon-eui Kim, Philippe Rocca-Serra, Alejandra Gonzalez-Beltran, Claudiu Farcas, Todd Johnson, Ron Margolis, George Alter, Susanna-Assunta Sansone, Ian M Fore, Lucila Ohno-Machado, Jeffrey S Grethe, Hua Xu; DataMed – an open source discovery index for finding biomedical datasets, Journal of the American Medical Informatics Association, Volume 25, Issue 3, 1 March 2018, Pages 300–308, https://doi.org/10.1093/jamia/ocx121
 - Alejandra N Gonzalez-Beltran, John Campbell, Patrick Dunn, Diana Guijarro, Sanda Ionescu, Hyeoneui Kim, Jared Lyle, Jeffrey Wiser, Susanna-Assunta Sansone, Philippe Rocca-Serra; **Data discovery with DATS: exemplar adoptions and lessons learned**, *Journal of the American Medical Informatics Association*, Volume 25, Issue 1, 1 January 2018, Pages 13–16, [https://doi.org/10.1093/jamia/ocx119]( https://doi.org/10.1093/jamia/ocx119)

@@ -12,6 +12,9 @@
         },
         {
           "type": "object"
+        },
+        {
+          "type": "array"
         }
       ]
     },
@@ -56,11 +59,12 @@
         "$ref" : "material_schema.json#"
       }
     },
-    "licenses": {
-      "description": "The terms of use of the information on the study group.",
+    "consentInformation": {
+      "description": "The consent information related to this study group.",
       "type": "array",
-      "items": {
-        "$ref": "license_schema.json#"
+      "items" : {
+        "$ref" : "consent_info_schema.json#"
+
       }
     },
     "extraProperties": {

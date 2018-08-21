@@ -12,6 +12,9 @@
         },
         {
           "type": "object"
+        },
+        {
+          "type": "array"
         }
       ]
     },
@@ -40,10 +43,15 @@
     },
     "dates" : {
       "description": "Relevant dates, such as the diagnosis date of the disease, may be provided.",
-      "type" : "array",
+      "type": "array",
       "items": {
-        "$ref" : "date_info_schema.json#"
+        "$ref": "date_info_schema.json#"
       }
+    },
+    "diseaseStatus": {
+      "description": "A value (and ideally also an ontology annotation provided as a valueIRI) for the disease status.",
+      "$ref": "annotation_schema.json#"
+
     },
     "extraProperties": {
       "description": "Extra properties that do not fit in the previous specified attributes. ",

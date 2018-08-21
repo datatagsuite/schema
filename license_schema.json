@@ -12,6 +12,9 @@
         },
         {
           "type": "object"
+        },
+        {
+          "type": "array"
         }
       ]
     },
@@ -46,7 +49,17 @@
       "items": {
         "$ref" : "date_info_schema.json#"
       }
-    },   
+    },
+    "licensingAuthority": {
+      "description": "The person(s) or organization(s) responsible for granting access to the data by approving the license.",
+      "type" : "array",
+      "items" : {
+        "oneOf": [
+          {"$ref" : "person_schema.json#"},
+          {"$ref" : "organization_schema.json#"}
+        ]
+      }
+    },
     "creators" : {
       "description": "The person(s) or organization(s) responsible for writing the license.",
       "type" : "array",
@@ -55,8 +68,7 @@
           {"$ref" : "person_schema.json#"},
           {"$ref" : "organization_schema.json#"}
         ]
-      },
-      "minItems" : 1
+      }
     },
     "consentInformation": {
       "description": "Types of consent given by study participant extracted from the terms of use documents. Ideally specified from a controlled vocabulary or ontology, such as GA4GH Data Use Ontology (DUO: http://www.obofoundry.org/ontology/duo.html) or ADA-M matrix (https://github.com/ga4gh/ADA-M).",
