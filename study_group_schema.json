@@ -64,7 +64,6 @@
       "type": "array",
       "items" : {
         "$ref" : "consent_info_schema.json#"
-
       }
     },
     "extraProperties": {
