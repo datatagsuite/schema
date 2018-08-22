@@ -37,7 +37,7 @@
     },
     "name": {
       "description": "The name of the consent information, including a label and ideally an ontology term from resources such as DUO, ADA-M.",
-      "type" :  "annotation_schema.json#"
+      "$ref" :  "annotation_schema.json#"
     },
     "abbreviation": {
       "description": "An abbreviation of the consent information.",
