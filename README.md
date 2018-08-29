@@ -8,7 +8,9 @@ The schemas can be accessed through the permanent identifiers with the following
 
 The documentation about DATS is available at: https://datatagsuite.github.io/docs/html/
 
-In particular, you can visualise the schemas here: https://datatagsuite.github.io/docs/html/dats.html
+In particular, you can visualise the schemas here: 
+
+https://fairsharing.github.io/JSONSchema-documenter/index.html?parameters={%22target%22:%22https://w3id.org/dats/schema/dataset_schema.json%22,%22display%22:%22grid%22}
 
 Previously, previous development of DATS can be found at this repository: https://github.com/datatagsuite/WG3-MetadataSpecifications
 
