@@ -74,11 +74,11 @@
         ]
       }
     },
-    "licenses": {
-      "description": "The terms of use of the dimension.",
+   "consentInformation": {
+      "description": "The consent information related to this dimennsion.",
       "type": "array",
-      "items": {
-        "$ref": "license_schema.json#"
+      "items" : {
+        "$ref" : "consent_info_schema.json#"
       }
     },
     "partOf" : {
