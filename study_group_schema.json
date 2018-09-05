@@ -41,6 +41,13 @@
       "description": "The name of the study group.",
       "type" :  "string"
     },
+    "keywords": {
+      "description": "a set of annotations to characterize the study group.",
+      "type": "array",
+      "items": {
+        "$ref": "annotation_schema.json#"
+      }
+    },
     "size": {
       "description": "The number of members in the group.",
       "type" :  "number"

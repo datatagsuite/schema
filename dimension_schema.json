@@ -74,6 +74,13 @@
         ]
       }
     },
+   "consentInformation": {
+      "description": "The consent information related to this dimennsion.",
+      "type": "array",
+      "items" : {
+        "$ref" : "consent_info_schema.json#"
+      }
+    },
     "partOf" : {
       "description": "The dataset(s) this dimension belongs to.",
       "type" : "array",

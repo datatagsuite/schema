@@ -41,6 +41,13 @@
       "description": "The name of the disease.",
       "type" :  "string"
     },
+    "dates" : {
+      "description": "Relevant dates, such as the diagnosis date of the disease, may be provided.",
+      "type": "array",
+      "items": {
+        "$ref": "date_info_schema.json#"
+      }
+    },
     "diseaseStatus": {
       "description": "A value (and ideally also an ontology annotation provided as a valueIRI) for the disease status.",
       "$ref": "annotation_schema.json#"
