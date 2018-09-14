@@ -1,30 +1,45 @@
 {
   "id": "https://w3id.org/dats/schema/genome_location_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "genomeLocation",
+  "title": "GenomeLocation",
   "description": "Location of a sequence object used both by display, and by jbrowse to render a browser. The addition to DATS uses the genomeLocation as defined by AGR [https://github.com/alliance-genome/agr_schemas/blob/develop/gene/genomeLocation.json]",
   "type": "object",
-  "required": [ "assembly","chromosome" ],
   "properties": {
-        "assembly": { 
-            "type" : "string",
-            "description" : "The assembly on which the position and chromosome are based."
+    "@context": {
+      "anyOf": [
+        {
+          "type": "string"
         },
-        "startPosition":{
-            "type": "number",
-            "description": "the start position of the location."
+        {
+          "type": "object"
         },
-        "endPosition":{
-            "type": "number",
-            "description": "the end position of the location."
-        },
-        "chromosome":{
-            "type": "string",
-            "description": "the chromosome of the genomic feature.  Note: whatever loaded here, will be used in JBrowse."
-        },
-	"strand":{
-	    "enum": ["+","-","."],
-	    "description": "strand of the genome location."
-	}
-  }
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": { "type": "string", "format": "uri" },
+    "@type": { "type": "string", "enum": [ "GenomeLocation" ]},
+    "assembly": {
+      "type" : "string",
+      "description" : "The assembly on which the position and chromosome are based."
+    },
+    "startPosition":{
+      "type": "number",
+      "description": "the start position of the location."
+    },
+    "endPosition":{
+      "type": "number",
+      "description": "the end position of the location."
+    },
+    "chromosome":{
+      "type": "string",
+      "description": "the chromosome of the genomic feature.  Note: whatever loaded here, will be used in JBrowse."
+    },
+    "strand":{
+      "enum": ["+","-","."],
+      "description": "strand of the genome location."
+    }
+  },
+  "required": [ "assembly","chromosome" ]
 }
