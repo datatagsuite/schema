@@ -16,7 +16,7 @@ Previously, previous development of DATS can be found at this repository: https:
 
 DATS core entities are represented in this overview diagram:
 
-![alt text](https://github.com/datatagsuite/WG3-MetadataSpecifications/blob/master/doc/v2.2/DATS-v2.2-core-entities-required-attributes.cmap.svg "DATS overview")
+![alt text](https://github.com/datatagsuite/docs/blob/master/source/_static/DATS-revised-overview.jpg "DATS overview")
 
 
 
