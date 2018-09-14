@@ -14,7 +14,7 @@ https://fairsharing.github.io/JSONSchema-documenter/index.html?parameters={%22ta
 
 Previously, previous development of DATS can be found at this repository: https://github.com/datatagsuite/WG3-MetadataSpecifications
 
-DATS core entities are represented in this overview diagram:
+DATS entities are represented in this overview diagram, including 'core entities' that allow to describe datasets irrespective of their domains and a set of entities that are specific for datasets in the biomedical domain.
 
 ![alt text](https://github.com/datatagsuite/docs/blob/master/source/_static/DATS-revised-overview.jpg "DATS overview")
 
