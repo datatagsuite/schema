@@ -19,7 +19,7 @@
       ]
     },
     "@id": { "type": "string", "format": "uri" },
-    "@type": { "type": "string", "enum": [ "Consent" ]},
+    "@type": { "type": "string", "enum": [ "ConsentInfo" ]},
     "identifier": {
       "$ref": "identifier_info_schema.json#"
     },
