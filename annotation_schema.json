@@ -20,6 +20,7 @@
       ]
     },
     "@id": {
+      "description": "The JSON-LD identifier",
       "type": "string",
       "format": "uri"
     },

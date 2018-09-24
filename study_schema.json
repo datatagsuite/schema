@@ -19,7 +19,10 @@
         }
       ]
     },
-    "@id": { "type": "string", "format": "uri" },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string", "format": "uri"
+    },
     "@type": {
       "description": "The JSON-LD type",
       "type": "string", "enum": [ "Study" ]},
