@@ -8,15 +8,11 @@ The schemas can be accessed through the permanent identifiers with the following
 
 The documentation about DATS is available at: https://datatagsuite.github.io/docs/html/
 
-In particular, you can visualise the schemas here: 
-
-https://fairsharing.github.io/JSONSchema-documenter/index.html?parameters={%22target%22:%22https://w3id.org/dats/schema/dataset_schema.json%22,%22display%22:%22grid%22}
-
 Previously, previous development of DATS can be found at this repository: https://github.com/datatagsuite/WG3-MetadataSpecifications
 
-DATS core entities are represented in this overview diagram:
+DATS entities are represented in this overview diagram, including 'core entities' that allow to describe datasets irrespective of their domains and a set of entities that are specific for datasets in the biomedical domain.
 
-![alt text](https://github.com/datatagsuite/WG3-MetadataSpecifications/blob/master/doc/v2.2/DATS-v2.2-core-entities-required-attributes.cmap.svg "DATS overview")
+![alt text](https://github.com/datatagsuite/docs/blob/master/source/_static/DATS-revised-overview.jpg "DATS overview")
 
 
 
