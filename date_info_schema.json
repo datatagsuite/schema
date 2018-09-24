@@ -6,6 +6,7 @@
   "type": "object",
   "properties": {
     "@context": {
+      "description": "The JSON-LD context",
       "anyOf": [
         {
           "type": "string"
@@ -19,7 +20,10 @@
       ]
     },
     "@id": { "type": "string", "format": "uri" },
-    "@type": { "type": "string", "enum": [ "Date" ]},
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string", "enum": [ "Date" ]
+    },
     "date": {
       "description": "A date following the ISO8601 standard.",
       "type" :  "string",

@@ -6,6 +6,7 @@
   "type": "object",
   "properties": {
     "@context": {
+      "description": "The JSON-LD context",
       "anyOf": [
         {
           "type": "string"
@@ -19,7 +20,9 @@
       ]
     },
     "@id": { "type": "string", "format": "uri" },
-    "@type": { "type": "string", "enum": [ "GenomeLocation" ]},
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string", "enum": [ "GenomeLocation" ]},
     "assembly": {
       "type" : "string",
       "description" : "The assembly on which the position and chromosome are based."

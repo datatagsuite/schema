@@ -5,6 +5,7 @@
   "description": "A physical entity.",
   "type": "object",
   "properties": {
+    "description": "The JSON-LD context",
     "@context": {
       "anyOf": [
         {
@@ -23,6 +24,7 @@
       "format": "uri"
     },
     "@type": {
+      "description": "The JSON-LD type",
       "type": "string",
       "enum": [
         "Material"

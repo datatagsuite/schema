@@ -16,6 +16,7 @@
   },
   "properties": {
     "@context": {
+      "description": "The JSON-LD context",
       "anyOf": [
         {
           "type": "string"
@@ -29,7 +30,9 @@
       ]
     },
     "@id": { "type": "string", "format": "uri" },
-    "@type": { "type": "string", "enum": [ "Place" ]},
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string", "enum": [ "Place" ]},
     "identifier": {
       "description": "Primary identifier for the place.",
       "$ref": "identifier_info_schema.json#"
