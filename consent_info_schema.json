@@ -6,6 +6,7 @@
   "type": "object",
   "properties": {
     "@context": {
+      "description": "The JSON-LD context",
       "anyOf": [
         {
           "type": "string"
@@ -18,8 +19,12 @@
         }
       ]
     },
-    "@id": { "type": "string", "format": "uri" },
-    "@type": { "type": "string", "enum": [ "Consent" ]},
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string", "format": "uri" },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string", "enum": [ "ConsentInfo" ]},
     "conformsTo": {
       "type": "string",
       "enum": [ "https://w3id.org/dats/schema/consent_info_schema.json" ]
@@ -41,7 +46,7 @@
     },
     "name": {
       "description": "The name of the consent information, including a label and ideally an ontology term from resources such as DUO, ADA-M.",
-      "type" :  "annotation_schema.json#"
+      "$ref" :  "annotation_schema.json#"
     },
     "abbreviation": {
       "description": "An abbreviation of the consent information.",

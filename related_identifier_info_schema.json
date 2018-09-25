@@ -6,6 +6,7 @@
   "type": "object",
   "properties": {
     "@context": {
+      "description": "The JSON-LD context",
       "anyOf": [
         {
           "type": "string"
@@ -18,12 +19,17 @@
         }
       ]
     },
-    "@id": { "type": "string", "format": "uri" },
-    "@type": { "type": "string", "enum": [ "RelatedIdentifier" ]},
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string", "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string", "enum": [ "RelatedIdentifier" ]},
     "conformsTo": {
-            "type": "string",
-            "enum": [ "https://w3id.org/dats/schema/related_identifier_schema.json" ]
-        },
+      "type": "string",
+      "enum": [ "https://w3id.org/dats/schema/related_identifier_schema.json" ]
+    },
     "identifier": {
       "description": "An identifier of a related resource.",
       "type" : "string"

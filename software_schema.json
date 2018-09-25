@@ -6,6 +6,7 @@
   "type": "object",
   "properties": {
     "@context": {
+      "description": "The JSON-LD context",
       "anyOf": [
         {
           "type": "string"
@@ -18,12 +19,17 @@
         }
       ]
     },
-    "@id": { "type": "string", "format": "uri" },
-    "@type": { "type": "string", "enum": [ "Software" ]},
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string", "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string", "enum": [ "Software" ]},
     "conformsTo": {
-            "type": "string",
-            "enum": [ "https://w3id.org/dats/schema/software_schema.json" ]
-        },
+      "type": "string",
+      "enum": [ "https://w3id.org/dats/schema/software_schema.json" ]
+    },
     "identifier": {
       "$ref": "identifier_info_schema.json#"
     },
@@ -59,6 +65,13 @@
     "version" : {
       "description": "A release point for the software.",
       "type" : "string"
+    },
+    "dates" : {
+      "description": "Relevant dates, e.g. the release date of the software, may be provided.",
+      "type" : "array",
+      "items": {
+        "$ref" : "date_info_schema.json#"
+      }
     },
     "isUsedBy" : {
       "description": "The data acquisition activity that makes use of this software.",

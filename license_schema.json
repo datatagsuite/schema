@@ -6,6 +6,7 @@
   "type": "object",
   "properties": {
     "@context": {
+      "description": "The JSON-LD context",
       "anyOf": [
         {
           "type": "string"
@@ -18,12 +19,17 @@
         }
       ]
     },
-    "@id": { "type": "string", "format": "uri" },
-    "@type": { "type": "string", "enum": [ "License" ]},
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string", "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string", "enum": [ "License" ]},
     "conformsTo": {
-            "type": "string",
-            "enum": [ "https://w3id.org/dats/schema/license_schema.json" ]
-        },
+      "type": "string",
+      "enum": [ "https://w3id.org/dats/schema/license_schema.json" ]
+    },
     "identifier": {
       "$ref": "identifier_info_schema.json#"
     },
@@ -47,6 +53,13 @@
       "description": "The version of the license.",
       "type" :  "string"
     },
+    "dates" : {
+      "description": "Relevant dates, such as the date of the license was issued, may be provided.",
+      "type" : "array",
+      "items": {
+        "$ref" : "date_info_schema.json#"
+      }
+    },
     "licensingAuthority": {
       "description": "The person(s) or organization(s) responsible for granting access to the data by approving the license.",
       "type" : "array",
@@ -65,6 +78,13 @@
           {"$ref" : "person_schema.json#"},
           {"$ref" : "organization_schema.json#"}
         ]
+      }
+    },
+    "consentInformation": {
+      "description": "Types of consent given by study participant extracted from the terms of use documents. Ideally specified from a controlled vocabulary or ontology, such as GA4GH Data Use Ontology (DUO: http://www.obofoundry.org/ontology/duo.html) or ADA-M matrix (https://github.com/ga4gh/ADA-M).",
+      "type": "array",
+      "items": {
+        "$ref": "annotation_schema.json#"
       }
     },
     "dataUseConditions": {

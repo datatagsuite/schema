@@ -6,6 +6,7 @@
   "type": "object",
   "properties": {
     "@context": {
+      "description": "The JSON-LD context",
       "anyOf": [
         {
           "type": "string"
@@ -18,12 +19,17 @@
         }
       ]
     },
-    "@id": { "type": "string", "format": "uri" },
-    "@type": { "type": "string", "enum": [ "Dimension" ]},
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string", "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string", "enum": [ "Dimension" ]},
     "conformsTo": {
-            "type": "string",
-            "enum": [ "https://w3id.org/dats/schema/dimension_schema.json" ]
-        },
+      "type": "string",
+      "enum": [ "https://w3id.org/dats/schema/dimension_schema.json" ]
+    },
     "identifier": {
       "$ref": "identifier_info_schema.json#"
     },
@@ -76,6 +82,13 @@
           {"$ref" : "material_schema.json#"},
           {"$ref" : "dataset_schema.json#"}
         ]
+      }
+    },
+    "consentInformation": {
+      "description": "The consent information related to this dimennsion.",
+      "type": "array",
+      "items" : {
+        "$ref" : "consent_info_schema.json#"
       }
     },
     "partOf" : {
