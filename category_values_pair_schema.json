@@ -25,6 +25,10 @@
     "@type": {
       "description": "The JSON-LD type",
       "type": "string", "enum": [ "CategoryValuesPair" ]},
+    "conformsTo": {
+      "type": "string",
+      "enum": [ "https://w3id.org/dats/schema/category_values_pair_schema.json" ]
+    },
     "category": {
       "description": "A characteristic or property about the entity this object is associated with.",
       "type": "string"

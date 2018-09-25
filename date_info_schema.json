@@ -27,6 +27,10 @@
       "description": "The JSON-LD type",
       "type": "string", "enum": [ "Date" ]
     },
+    "conformsTo": {
+      "type": "string",
+      "enum": [ "https://w3id.org/dats/schema/date_info_schema.json" ]
+    },
     "date": {
       "description": "A date following the ISO8601 standard.",
       "type" :  "string",

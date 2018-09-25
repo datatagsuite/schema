@@ -26,6 +26,10 @@
     "@type": {
       "description": "The JSON-LD type",
       "type": "string", "enum": [ "Identifier" ]},
+    "conformsTo": {
+      "type": "string",
+      "enum": [ "https://w3id.org/dats/schema/identifier_info_schema.json"  ]
+    },
     "identifier": {
       "description": "A code uniquely identifying an entity locally to a system or globally.",
       "type" : "string"

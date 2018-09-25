@@ -26,6 +26,10 @@
     "@type": {
       "description": "The JSON-LD type",
       "type": "string", "enum": [ "Dimension" ]},
+    "conformsTo": {
+      "type": "string",
+      "enum": [ "https://w3id.org/dats/schema/dimension_schema.json" ]
+    },
     "identifier": {
       "$ref": "identifier_info_schema.json#"
     },
@@ -80,7 +84,7 @@
         ]
       }
     },
-   "consentInformation": {
+    "consentInformation": {
       "description": "The consent information related to this dimennsion.",
       "type": "array",
       "items" : {

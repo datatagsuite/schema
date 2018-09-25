@@ -19,6 +19,7 @@
         }
       ]
     },
+
     "@id": {
       "description": "The JSON-LD identifier",
       "type": "string", "format": "uri"
@@ -26,6 +27,10 @@
     "@type": {
       "description": "The JSON-LD type",
       "type": "string", "enum": [ "DataType" ]},
+    "conformsTo": {
+      "type": "string",
+      "enum": [ "https://w3id.org/dats/schema/data_type_schema.json" ]
+    },
     "information": {
       "description": "The measurements or facts that the data is about.",
       "$ref" : "annotation_schema.json#"

@@ -25,6 +25,10 @@
     "@type": {
       "description": "The JSON-LD type",
       "type": "string", "enum": [ "BiologicalEntity" ]},
+    "conformsTo": {
+      "type": "string",
+      "enum": [ "https://w3id.org/dats/schema/biological_entity_schema.json" ]
+    },
     "identifier": {
       "$ref": "identifier_info_schema.json#"
     },

@@ -29,6 +29,10 @@
     "identifier": {
       "$ref": "identifier_info_schema.json#"
     },
+    "conformsTo": {
+            "type": "string",
+            "enum": [ "https://w3id.org/dats/schema/taxonomic_info_schema.json" ]
+    },
     "alternateIdentifiers": {
       "description": "Alternate identifiers for the organism.",
       "type": "array",

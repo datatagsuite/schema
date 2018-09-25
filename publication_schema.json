@@ -26,6 +26,10 @@
     "@type":  {
       "description": "The JSON-LD type",
       "type": "string", "enum": [ "Publication" ]},
+    "conformsTo": {
+      "type": "string",
+      "enum": [ "https://w3id.org/dats/schema/publication_schema.json" ]
+    },
     "identifier": {
       "$ref": "identifier_info_schema.json#"
     },

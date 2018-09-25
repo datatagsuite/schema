@@ -19,7 +19,7 @@
         }
       ]
     },
-   "@id": {
+    "@id": {
       "description": "The JSON-LD identifier",
       "type": "string",
       "format": "uri"
@@ -28,6 +28,12 @@
       "description": "The JSON-LD type",
       "type": "string",
       "enum": [ "Access" ]
+    },
+    "conformsTo": {
+      "type": "string",
+      "enum": [
+        "https://w3id.org/dats/schema/access_schema.json"
+      ]
     },
     "identifier": {
       "$ref": "identifier_info_schema.json#"
