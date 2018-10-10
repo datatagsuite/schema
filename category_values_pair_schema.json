@@ -46,9 +46,7 @@
       "description": "A set of (annotated) values associated with the cateogory.",
       "type": "array",
       "items": {
-        "items": {
           "$ref" : "annotation_schema.json#"
-        }
       }
     }
   },

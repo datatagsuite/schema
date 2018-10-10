@@ -134,6 +134,10 @@
                   "$ref": "publication_schema.json#"
                 }
               }
+            },
+            "dateEstablished": {
+              "description": "The date in which the evidence of the relationship was established.",
+              "$ref" : "date_info_schema.json#"
             }
           }
         }
