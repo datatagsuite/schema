@@ -139,10 +139,10 @@
       "items": {
         "$ref": "category_values_pair_schema.json#"
       }
-    },
-    "additionalProperties": false,
+    } 
+  },
+   "additionalProperties": false,
     "required": [
       "name"
     ]
-  }
 }
