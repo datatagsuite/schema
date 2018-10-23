@@ -5,8 +5,8 @@
   "description": "A physical entity.",
   "type": "object",
   "properties": {
-    "description": "The JSON-LD context",
     "@context": {
+      "description": "The JSON-LD context",
       "anyOf": [
         {
           "type": "string"
