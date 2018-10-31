@@ -132,6 +132,7 @@
                   }
                 },
                 "publications": {
+                  "description": "The list of publications providing evidence of the relationship.",
                   "type": "array",
                   "items": {
                     "$ref": "publication_schema.json#"
