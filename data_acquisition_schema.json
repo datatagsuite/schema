@@ -28,6 +28,7 @@
       "description": "The JSON-LD type",
       "type": "string", "enum": [ "DataAcquisition" ]},
     "identifier": {
+      "description": "The identifier of the data acquisition.",
       "$ref": "identifier_info_schema.json#"
     },
     "alternateIdentifiers": {

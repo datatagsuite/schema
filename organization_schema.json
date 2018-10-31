@@ -27,6 +27,7 @@
       "description": "The JSON-LD type",
       "type": "string", "enum": [ "Organization" ]},
     "identifier": {
+      "description": "The identifier of the organization.",
       "$ref": "identifier_info_schema.json#"
     },
     "alternateIdentifiers": {

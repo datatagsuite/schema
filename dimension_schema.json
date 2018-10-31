@@ -27,6 +27,7 @@
       "description": "The JSON-LD type",
       "type": "string", "enum": [ "Dimension" ]},
     "identifier": {
+      "description": "The identifier of the dimension.",
       "$ref": "identifier_info_schema.json#"
     },
     "alternateIdentifiers": {

@@ -26,6 +26,7 @@
       "description": "The JSON-LD type",
       "type": "string", "enum": [ "AnatomicalPart" ]},
     "identifier": {
+      "description": "The identifier of the anatomical part.",
       "$ref": "identifier_info_schema.json#"
     },
     "alternateIdentifiers": {

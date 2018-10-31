@@ -27,6 +27,7 @@
       "description": "The JSON-LD type",
       "type": "string", "enum": [ "Software" ]},
     "identifier": {
+      "description": "The identifier of the software.",
       "$ref": "identifier_info_schema.json#"
     },
     "alternateIdentifiers": {

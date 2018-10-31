@@ -27,6 +27,7 @@
       "description": "The JSON-LD type",
       "type": "string", "enum": [ "License" ]},
     "identifier": {
+      "description": "The identifier of the license.",
       "$ref": "identifier_info_schema.json#"
     },
     "alternateIdentifiers": {

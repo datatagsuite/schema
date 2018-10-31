@@ -30,6 +30,7 @@
       "enum": [ "Treatment" ]
     },
     "identifier": {
+      "description": "The identifier of the treatment.",
       "$ref": "identifier_info_schema.json#"
     },
     "alternateIdentifiers": {

@@ -32,6 +32,7 @@
       ]
     },
     "identifier": {
+      "description": "The identifier of the material.",
       "$ref": "identifier_info_schema.json#"
     },
     "alternateIdentifiers": {

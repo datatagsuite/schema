@@ -27,6 +27,7 @@
       "type": "string", "enum": [ "Activity" ]
     },
     "identifier": {
+      "description": "The identifier of the activity.",
       "$ref": "identifier_info_schema.json#"
     },
     "alternateIdentifiers": {

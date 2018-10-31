@@ -27,6 +27,7 @@
       "description": "The JSON-LD type",
       "type": "string", "enum": [ "DataRepository" ]},
     "identifier": {
+      "description": "The identifier of the data repository.",
       "$ref": "identifier_info_schema.json#"
     },
     "alternateIdentifiers": {

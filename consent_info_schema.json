@@ -26,6 +26,7 @@
       "description": "The JSON-LD type",
       "type": "string", "enum": [ "ConsentInfo" ]},
     "identifier": {
+      "description": "The identifier of the consent information.",
       "$ref": "identifier_info_schema.json#"
     },
     "alternateIdentifiers": {

@@ -27,6 +27,7 @@
       "description": "The JSON-LD type",
       "type": "string", "enum": [ "Study" ]},
     "identifier": {
+      "description": "The identifier of the study.",
       "$ref": "identifier_info_schema.json#"
     },
     "alternateIdentifiers": {

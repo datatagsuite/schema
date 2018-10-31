@@ -30,6 +30,7 @@
       "enum": [ "Access" ]
     },
     "identifier": {
+      "description": "The identifier of the access entity.",
       "$ref": "identifier_info_schema.json#"
     },
     "alternateIdentifiers": {

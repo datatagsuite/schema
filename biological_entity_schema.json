@@ -26,6 +26,7 @@
       "description": "The JSON-LD type",
       "type": "string", "enum": [ "BiologicalEntity" ]},
     "identifier": {
+      "description": "The identifier of the biological entity.",
       "$ref": "identifier_info_schema.json#"
     },
     "alternateIdentifiers": {
