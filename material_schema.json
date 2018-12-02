@@ -6,6 +6,7 @@
   "type": "object",
   "properties": {
     "@context": {
+      "description": "The JSON-LD context",
       "anyOf": [
         {
           "type": "string"
@@ -19,16 +20,19 @@
       ]
     },
     "@id": {
+      "description": "The JSON-LD identifier",
       "type": "string",
       "format": "uri"
     },
     "@type": {
+      "description": "The JSON-LD type",
       "type": "string",
       "enum": [
         "Material"
       ]
     },
     "identifier": {
+      "description": "The identifier of the material.",
       "$ref": "identifier_info_schema.json#"
     },
     "alternateIdentifiers": {
@@ -136,10 +140,10 @@
       "items": {
         "$ref": "category_values_pair_schema.json#"
       }
-    },
-    "additionalProperties": false,
+    } 
+  },
+   "additionalProperties": false,
     "required": [
       "name"
     ]
-  }
 }

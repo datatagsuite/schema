@@ -6,6 +6,7 @@
   "type": "object",
   "properties": {
     "@context": {
+      "description": "The JSON-LD context",
       "anyOf": [
         {
           "type": "string"
@@ -18,9 +19,15 @@
         }
       ]
     },
-    "@id": { "type": "string", "format": "uri" },
-    "@type": { "type": "string", "enum": [ "Disease" ]},
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string", "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string", "enum": [ "Disease" ]},
     "identifier": {
+      "description": "The identifier of the disease.",
       "$ref": "identifier_info_schema.json#"
     },
     "alternateIdentifiers": {

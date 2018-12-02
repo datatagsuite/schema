@@ -6,6 +6,7 @@
   "type": "object",
   "properties": {
     "@context": {
+      "description": "The JSON-LD context",
       "anyOf": [
         {
           "type": "string"
@@ -18,9 +19,15 @@
         }
       ]
     },
-    "@id": { "type": "string", "format": "uri" },
-    "@type": { "type": "string", "enum": [ "MolecularEntity" ]},
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string", "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string", "enum": [ "MolecularEntity" ]},
     "identifier": {
+      "description": "The identifier of the molecular entity.",
       "$ref": "identifier_info_schema.json#"
     },
     "alternateIdentifiers": {
@@ -91,39 +98,50 @@
       "description": "Entities that are related to this molecular entity.",
       "type": "array",
       "items": {
-        "object":{
-          "description": "The object of the relationship, i.e. the representation or identifier of the related enttity",
-          "anyOf":[
-            {
-              "type": "object"
-            },
-            {
-              "type": "string"
-            }
-          ]
-        },
-        "relation": {
-          "description": "The type of the relationship corresponding to this molecular entity.",
-          "$ref" : "annotation_schema.json#"
-        },
-        "resultingFrom": {
-          "description": "The activity (or process) that gave origin at the relationship between this molecular entity and the external entity.",
-          "$ref": "activity_schema.json#"
-        },
-        "relationEvidence" : {
-          "type": "array",
-          "items": {
-            "evidenceCodes": {
-              "description": "An array of labels and ideally an ontology term IRI (e.g. for the Evidence & Conclusion Ontology - ECO) indicating the evidence for the relationship between the molecular entity and the external entity",
-              "type": "array",
-              "items": {
-                "$ref": "annotation_schema.json#"
+        "type": "object",
+        "properties": {
+          "object": {
+            "description": "The object of the relationship, i.e. the representation or identifier of the related enttity",
+            "anyOf": [
+              {
+                "type": "object"
+              },
+              {
+                "type": "string"
               }
-            },
-            "publications": {
-              "type": "array",
-              "items": {
-                "$ref": "publication_schema.json#"
+            ]
+          },
+          "relation": {
+            "description": "The type of the relationship corresponding to this molecular entity.",
+            "$ref": "annotation_schema.json#"
+          },
+          "resultingFrom": {
+            "description": "The activity (or process) that gave origin at the relationship between this molecular entity and the external entity.",
+            "$ref": "activity_schema.json#"
+          },
+          "relationEvidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "evidenceCodes": {
+                  "description": "An array of labels and ideally an ontology term IRI (e.g. for the Evidence & Conclusion Ontology - ECO) indicating the evidence for the relationship between the molecular entity and the external entity",
+                  "type": "array",
+                  "items": {
+                    "$ref": "annotation_schema.json#"
+                  }
+                },
+                "publications": {
+                  "description": "The list of publications providing evidence of the relationship.",
+                  "type": "array",
+                  "items": {
+                    "$ref": "publication_schema.json#"
+                  }
+                },
+                "dateEstablished": {
+                  "description": "The date in which the evidence of the relationship was established.",
+                  "$ref": "date_info_schema.json#"
+                }
               }
             }
           }

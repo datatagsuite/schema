@@ -1,11 +1,12 @@
 {
-  "id": "https://w3id.org/dats/schema/related_identifier_schema.json",
+  "id": "https://w3id.org/dats/schema/related_identifier_info_schema.json",
   "$schema": "http://json-schema.org/draft-04/schema",
   "title": "DATS related identifier information schema",
   "description": "Information about an idenfier of related resources.",
   "type": "object",
   "properties": {
     "@context": {
+      "description": "The JSON-LD context",
       "anyOf": [
         {
           "type": "string"
@@ -18,8 +19,13 @@
         }
       ]
     },
-    "@id": { "type": "string", "format": "uri" },
-    "@type": { "type": "string", "enum": [ "RelatedIdentifier" ]},
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string", "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string", "enum": [ "RelatedIdentifier" ]},
     "identifier": {
       "description": "An identifier of a related resource.",
       "type" : "string"

@@ -6,6 +6,7 @@
   "type": "object",
   "properties": {
     "@context": {
+      "description": "The JSON-LD context",
       "anyOf": [
         {
           "type": "string"
@@ -18,8 +19,12 @@
         }
       ]
     },
-    "@id": { "type": "string", "format": "uri" },
-    "@type": { "type": "string", "enum": [ "CategoryValuesPair" ]},
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string", "format": "uri" },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string", "enum": [ "CategoryValuesPair" ]},
     "category": {
       "description": "A characteristic or property about the entity this object is associated with.",
       "type": "string"
@@ -41,9 +46,7 @@
       "description": "A set of (annotated) values associated with the cateogory.",
       "type": "array",
       "items": {
-        "items": {
           "$ref" : "annotation_schema.json#"
-        }
       }
     }
   },
