@@ -49,6 +49,10 @@
       "description": "An abbreviation of the consent information.",
       "type" :  "string"
     },
+    "participant": {
+      "description": "The person providing the consent.",
+      "$ref": "person_schema.json"
+    },
     "description": {
       "description": "A description of the consent information.",
       "type" :  "string"
