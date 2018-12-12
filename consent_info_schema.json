@@ -49,6 +49,10 @@
       "description": "An abbreviation of the consent information.",
       "type" :  "string"
     },
+    "participant": {
+      "description": "The person providing the consent.",
+      "$ref": "person_schema.json"
+    },
     "description": {
       "description": "A description of the consent information.",
       "type" :  "string"
@@ -58,6 +62,13 @@
       "type" :  "array",
       "items": {
          "$ref": "license_schema.json#"
+      }
+    },
+    "temporalCoverage": {
+      "description": "A set of dates indicating the temporal coverage of the consent information for dynamic consent.",
+      "type": "array",
+      "items": {
+        "$ref": "date_info_schema.json"
       }
     },
     "extraProperties": {
