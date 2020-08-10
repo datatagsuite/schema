@@ -1,6 +1,6 @@
 {
-    "id": "https://w3id.org/dats/schema/dataset_schema.json",
-    "$schema": "http://json-schema.org/draft-04/schema",
+    "$id": "https://w3id.org/dats/schema/dataset_schema.json",
+    "$schema": "http://json-schema.org/draft/2019-09/schema",
     "title": "DATS Dataset Schema",
     "description": "A set of dimensions about an entity being observed. A collection of data, published or curated by a single agent, and available for access or download in one or more formats (from DCAT: http://www.w3.org/TR/vocab-dcat/#Class:_Dataset). A body of structured information describing some topic(s) of interest (from: http://schema.org/Dataset).",
     "type": "object",
@@ -25,7 +25,8 @@
         },
         "@type": {
             "description": "The JSON-LD type",
-            "type": "string", "enum": [ "Dataset"]
+            "type": "string",
+            "const": "Dataset"
         },
         "identifier": {
             "description": "The identifier of the dataset.",
@@ -124,7 +125,7 @@
             }
         },
         "citationCount": {
-            "description": "The number of publications that cite this dataset (enumerated in the citations property)",
+            "description": "The number of publications that cite this dataset (consterated in the citations property)",
             "type": "integer"
         },
         "producedBy" : {

@@ -1,6 +1,6 @@
 {
-  "id": "https://w3id.org/dats/schema/place_schema.json",
-  "$schema": "http://json-schema.org/draft-04/schema",
+  "$id": "https://w3id.org/dats/schema/place_schema.json",
+  "$schema": "http://json-schema.org/draft/2019-09/schema",
   "title": "DATS place schema",
   "description": "A spatially bounded entity.",
   "comment": "It corresponds to Feature in GeoJSON, https://tools.ietf.org/html/rfc7946, geoLocation in DataCite,http://schema.datacite.org/meta/kernel-4.0/ and Place in schema.org",
@@ -35,7 +35,9 @@
     },
     "@type": {
       "description": "The JSON-LD type",
-      "type": "string", "enum": [ "Place" ]},
+      "type": "string",
+      "const": "Place"
+    },
     "identifier": {
       "description": "Primary identifier for the place.",
       "$ref": "identifier_info_schema.json#"

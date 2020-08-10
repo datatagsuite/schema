@@ -1,6 +1,6 @@
 {
-  "id": "https://w3id.org/dats/schema/annotation_schema.json",
-  "$schema": "http://json-schema.org/draft-04/schema",
+  "$id": "https://w3id.org/dats/schema/annotation_schema.json",
+  "$schema": "http://json-schema.org/draft/2019-09/schema",
   "title": "DATS annotation schema",
   "description": "A pair of value (string or numeric) with a corresponding ontology term (IRI), if applicable.",
   "type": "object",
@@ -27,9 +27,7 @@
     "@type": {
       "description": "The JSON-LD type",
       "type": "string",
-      "enum": [
-        "Annotation"
-      ]
+      "const": "Annotation"
     },
     "value": {
       "description": "The value of the annotation - it can be a string or a number (for coded values).",

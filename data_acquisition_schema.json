@@ -1,6 +1,6 @@
 {
-  "id": "https://w3id.org/dats/schema/data_acquisition_schema.json",
-  "$schema": "http://json-schema.org/draft-04/schema",
+  "$id": "https://w3id.org/dats/schema/data_acquisition_schema.json",
+  "$schema": "http://json-schema.org/draft/2019-09/schema",
   "title": "DATS data acquisition schema.",
   "description": "Process (or activity) of generating data through measurement made with specific techniques.",
   "type": "object",
@@ -26,7 +26,9 @@
     },
     "@type": {
       "description": "The JSON-LD type",
-      "type": "string", "enum": [ "DataAcquisition" ]},
+      "type": "string",
+      "const": "DataAcquisition"
+    },
     "identifier": {
       "description": "The identifier of the data acquisition.",
       "$ref": "identifier_info_schema.json#"

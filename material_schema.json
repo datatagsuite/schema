@@ -1,6 +1,6 @@
 {
-  "id": "https://w3id.org/dats/schema/material_schema.json",
-  "$schema": "http://json-schema.org/draft-04/schema",
+  "$id": "https://w3id.org/dats/schema/material_schema.json",
+  "$schema": "http://json-schema.org/draft/2019-09/schema",
   "title": "DATS material schema",
   "description": "A physical entity.",
   "type": "object",
@@ -27,9 +27,7 @@
     "@type": {
       "description": "The JSON-LD type",
       "type": "string",
-      "enum": [
-        "Material"
-      ]
+      "const": "Material"
     },
     "identifier": {
       "description": "The identifier of the material.",

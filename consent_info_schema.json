@@ -1,6 +1,6 @@
 {
-  "id": "https://w3id.org/dats/schema/consent_info_schema.json",
-  "$schema": "http://json-schema.org/draft-04/schema",
+  "$id": "https://w3id.org/dats/schema/consent_info_schema.json",
+  "$schema": "http://json-schema.org/draft/2019-09/schema",
   "title": "DATS consent information schema",
   "description": "Information about a consent code. Consent information schema can refer to one or more License object(s) and can be used to annotate DATS.Material, for fine grained control, or DATS.StudyGroup for coarser annotation",
   "type": "object",
@@ -24,7 +24,9 @@
       "type": "string", "format": "uri" },
     "@type": {
       "description": "The JSON-LD type",
-      "type": "string", "enum": [ "ConsentInfo" ]},
+      "type": "string",
+      "const": "ConsentInfo"
+    },
     "identifier": {
       "description": "The identifier of the consent information.",
       "$ref": "identifier_info_schema.json#"
