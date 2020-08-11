@@ -1,6 +1,6 @@
 {
   "$id": "https://w3id.org/dats/schema/provenance_schema.json",
-  "$schema": "http://json-schema.org/draft/2019-09/schema",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "title": "Internal DATS provenance schema",
   "description": "The provenance information kept in DataMed. This schema is for internal use in DataMed and not to be implemented by repositories.",
   "type": "object",

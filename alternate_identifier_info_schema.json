@@ -1,6 +1,6 @@
 {
   "$id": "https://w3id.org/dats/schema/alternate_identifier_info_schema.json",
-  "$schema": "http://json-schema.org/draft/2019-09/schema",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "title": "DATS alternate identifier information schema",
   "description": "Information about an alternate identifier (other than the primary).",
   "type": "object",

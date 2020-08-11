@@ -1,6 +1,6 @@
 {
   "$id": "https://w3id.org/dats/schema/publication_schema.json",
-  "$schema": "http://json-schema.org/draft/2019-09/schema",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "title" : "DATS publication schema",
   "description" : "A (digital) document made available by a publisher.",
   "type" : "object",

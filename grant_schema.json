@@ -1,6 +1,6 @@
 {
   "$id": "https://w3id.org/dats/schema/grant_schema.json",
-  "$schema": "http://json-schema.org/draft/2019-09/schema",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "title": "DATS grant schema",
   "description": "An allocated sum of funds given by a government or other organization for a particular purpose.",
   "type": "object",

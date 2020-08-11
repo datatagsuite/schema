@@ -1,6 +1,6 @@
 {
   "$id": "https://w3id.org/dats/schema/organization_schema.json",
-  "$schema": "http://json-schema.org/draft/2019-09/schema",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "title": "DATS organization schema",
   "description": "Legal or physical entity corresponding to a business or administration.",
   "type": "object",

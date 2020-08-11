@@ -1,6 +1,6 @@
 {
   "$id": "https://w3id.org/dats/schema/taxonomic_info_schema.json",
-  "$schema": "http://json-schema.org/draft/2019-09/schema",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "title": "DATS organism schema",
   "description": "A living entity.",
   "type": "object",

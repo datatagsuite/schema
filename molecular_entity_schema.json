@@ -1,6 +1,6 @@
 {
   "$id": "https://w3id.org/dats/schema/molecular_entity_schema.json",
-  "$schema": "http://json-schema.org/draft/2019-09/schema",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "title": "DATS molecular entity schema",
   "description": "A physical entity of molecular scales such as proteins, nucleic acids, chemical materials. They can be abiotic, biological or synthetic origin.",
   "type": "object",

@@ -1,6 +1,6 @@
 {
   "$id": "https://w3id.org/dats/schema/study_schema.json",
-  "$schema": "http://json-schema.org/draft/2019-09/schema",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "title": "DATS study schema",
   "description": "Process to acquire data on a sample and attempt to draw conclusions about the population the sample has been selected from, executing a plan and design.",
   "type": "object",

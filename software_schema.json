@@ -1,6 +1,6 @@
 {
   "$id": "https://w3id.org/dats/schema/software_schema.json",
-  "$schema": "http://json-schema.org/draft/2019-09/schema",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "title": "DATS software schema",
   "description": "A digital entity containing sets of instructions and operation, which allows computation and operation of and by computer.",
   "type": "object",

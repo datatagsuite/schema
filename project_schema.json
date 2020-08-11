@@ -1,6 +1,6 @@
 {
   "$id": "https://w3id.org/dats/schema/study_schema.json",
-  "$schema": "http://json-schema.org/draft/2019-09/schema",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "title": "DATS project schema",
   "description": "An object to describe an research program supported investigation and studies through funding tools",
   "type": "object",

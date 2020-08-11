@@ -1,6 +1,6 @@
 {
   "$id": "https://w3id.org/dats/schema/category_values_pair_schema.json",
-  "$schema": "http://json-schema.org/draft/2019-09/schema",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "title": "DATS extension mechanism",
   "description": "Extension mechanism for DATS, which allows to add extra properties to the entities. It should be used only for cases where there are no specific properties to deal with the desired property.",
   "type": "object",

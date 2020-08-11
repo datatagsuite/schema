@@ -1,6 +1,6 @@
 {
   "$id": "https://w3id.org/dats/schema/related_identifier_info_schema.json",
-  "$schema": "http://json-schema.org/draft/2019-09/schema",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "title": "DATS related identifier information schema",
   "description": "Information about an idenfier of related resources.",
   "type": "object",

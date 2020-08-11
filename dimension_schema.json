@@ -1,6 +1,6 @@
 {
   "$id": "https://w3id.org/dats/schema/dimension_schema.json",
-  "$schema": "http://json-schema.org/draft/2019-09/schema",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "title": "DATS dimension schema",
   "description": "A feature of an entity, i.e. an individual measurable property (both quantitative or qualitative) of the entity being observed.",
   "type": "object",
