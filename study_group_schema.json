@@ -40,7 +40,7 @@
       }
     },
     "relatedIdentifiers": {
-      "description": "",
+      "description": "Related identifiers for the study group",
       "type": "array",
       "items": {
         "$ref": "related_identifier_info_schema.json#"

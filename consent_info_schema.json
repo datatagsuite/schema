@@ -32,12 +32,14 @@
       "$ref": "identifier_info_schema.json#"
     },
     "alternateIdentifiers": {
+      "description": "Alternate identifiers for the consent information.",
       "type": "array",
       "items": {
         "$ref": "alternate_identifier_info_schema.json#"
       }
     },
     "relatedIdentifiers": {
+      "description": "Related identifiers for the consent information.",
       "type": "array",
       "items": {
         "$ref": "related_identifier_info_schema.json#"
