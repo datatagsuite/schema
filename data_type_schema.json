@@ -47,5 +47,6 @@
       "$ref" : "annotation_schema.json#"
 
     }
-  }
+  },
+  "additionalProperties": false
 }

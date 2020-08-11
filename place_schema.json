@@ -80,5 +80,6 @@
       "minItems": 1,
       "items": { "$ref": "#/definitions/position" }
     }
-  }
+  },
+  "additionalProperties": false
 }
