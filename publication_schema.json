@@ -47,7 +47,7 @@
       }
     },
     "title": {
-      "description": "The name of the publication, usually one sentece or short description of the publication.",
+      "description": "The name of the publication, usually one sentence or short description of the publication.",
       "type" :  "string"
     },
     "type" : {
