@@ -67,7 +67,10 @@
     },
     "values": {
       "description": "The actual collections of values collected for that dimension.",
-      "type": "array"
+      "type": "array",
+      "items": {
+          "$ref" : "annotation_schema.json#"
+      }
     },
     "unit": {
       "description": "A reference measurement unit associated with scalar dimensions, ideally from a reference controlled terminology.",
