@@ -1,6 +1,6 @@
 {
-  "id": "https://w3id.org/dats/schema/license_schema.json",
-  "$schema": "http://json-schema.org/draft-04/schema",
+  "$id": "https://w3id.org/dats/schema/license_schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "title": "DATS license schema",
   "description": "A legal document giving official permission to do something with a Resource. It is assumed that an external vocabulary will describe with sufficient granularity the permission for redistribution, modification, derivation, reuse, etc. and conditions for citation/acknowledgment.",
   "type": "object",
@@ -25,18 +25,22 @@
     },
     "@type": {
       "description": "The JSON-LD type",
-      "type": "string", "enum": [ "License" ]},
+      "type": "string",
+      "const": "License"
+    },
     "identifier": {
       "description": "The identifier of the license.",
       "$ref": "identifier_info_schema.json#"
     },
     "alternateIdentifiers": {
+      "description": "Alternate identifiers for the license.",
       "type": "array",
       "items": {
         "$ref": "alternate_identifier_info_schema.json#"
       }
     },
     "relatedIdentifiers": {
+      "description": "Related identifiers for the license.",
       "type": "array",
       "items": {
         "$ref": "related_identifier_info_schema.json#"

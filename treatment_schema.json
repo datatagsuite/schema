@@ -1,6 +1,6 @@
 {
-  "id": "https://w3id.org/dats/schema/treatment_schema.json",
-  "$schema": "http://json-schema.org/draft-04/schema",
+  "$id": "https://w3id.org/dats/schema/treatment_schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "title": "DATS treatment schema",
   "description": "Process, part of a study, consisting in exposing participants to the study to different conditions or group those participants into different categories based on specific criteria and compare their outcomes",
   "type": "object",
@@ -27,7 +27,7 @@
     "@type": {
       "description": "The JSON-LD type",
       "type": "string",
-      "enum": [ "Treatment" ]
+      "const": "Treatment"
     },
     "identifier": {
       "description": "The identifier of the treatment.",

@@ -1,6 +1,6 @@
 {
-  "id": "https://w3id.org/dats/schema/publication_schema.json",
-  "$schema": "http://json-schema.org/draft-04/schema",
+  "$id": "https://w3id.org/dats/schema/publication_schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "title" : "DATS publication schema",
   "description" : "A (digital) document made available by a publisher.",
   "type" : "object",
@@ -25,7 +25,9 @@
     },
     "@type":  {
       "description": "The JSON-LD type",
-      "type": "string", "enum": [ "Publication" ]},
+      "type": "string",
+      "const": "Publication"
+    },
     "identifier": {
       "description": "The identifier of the publication.",
       "$ref": "identifier_info_schema.json#"
@@ -45,7 +47,7 @@
       }
     },
     "title": {
-      "description": "The name of the publication, usually one sentece or short description of the publication.",
+      "description": "The name of the publication, usually one sentence or short description of the publication.",
       "type" :  "string"
     },
     "type" : {
