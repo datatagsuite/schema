@@ -76,7 +76,7 @@
         "$ref" : "date_info_schema.json#"
       }
     },
-    "project_assets":{
+    "projectAssets":{
       "description": "The person(s) or organisation(s) responsible for executing the project.",
       "type": "array",
       "items": {
@@ -91,7 +91,7 @@
         }
     },
   
-    "project_leads": {
+    "projectLeads": {
       "description": "The person(s) or organisation(s) responsible for executing the project.",
       "type": "array",
       "items": {
@@ -112,15 +112,22 @@
         "$ref": "annotation_schema.json#"
       }
     },
-    "funded_by" : {
+    "fundedBy" : {
             "description": "The grant(s) which funded and supported the work reported by the dataset.",
             "type" : "array",
             "items" : {
                 "$ref" : "grant_schema.json#"
             }
-        }
- },
-    "additionalProperties": false,
-    "required" : [ "title", "types", "project_leads" ]
+    },
+    "extraProperties": {
+      "description": "Extra properties that do not fit in the previous specified attributes. ",
+      "type": "array",
+      "items": {
+        "$ref" : "category_values_pair_schema.json#"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required" : [ "title", "types", "projectLeads" ]
 }
 
