@@ -119,6 +119,24 @@
                 "$ref" : "grant_schema.json#"
             }
     },
+    "primaryPublications" : {
+      "description": "The primary publication(s) associated with the project.",
+      "type" : "array",
+      "items" : {
+          "$ref" : "publication_schema.json#"
+      }
+    },
+    "citations" : {
+        "description": "The publication(s) that cite this project.",
+        "type" : "array",
+        "items" : {
+            "$ref" : "publication_schema.json#"
+        }
+    },
+    "citationCount": {
+        "description": "The number of publications that cite this project",
+        "type": "integer"
+    },
     "extraProperties": {
       "description": "Extra properties that do not fit in the previous specified attributes. ",
       "type": "array",
