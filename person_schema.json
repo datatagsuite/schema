@@ -62,10 +62,18 @@
       "description": "The person's family name.",
       "type" :  "string"
     },
+    "title": {
+      "description": "The person's title, usually a professional designation such as Dr or Prof.",
+      "type": "string"
+    },
     "email": {
       "description": "An electronic mail address for the person.",
       "type" :  "string",
       "format": "email"
+    },
+    "phoneNumber": {
+      "description": "A phone number for the person.",
+      "type" :  "string"
     },
     "affiliations" : {
       "description": "The organizations to which the person is associated with.",
