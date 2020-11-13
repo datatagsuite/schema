@@ -54,6 +54,15 @@
       "description": "The shortname, abbreviation associated to the organization.",
       "type" :  "string"
     },
+    "email": {
+      "description": "An electronic mail address for the organization.",
+      "type" :  "string",
+      "format": "email"
+    },
+    "phoneNumber": {
+      "description": "A phone number for the organization.",
+      "type" :  "string"
+    },
     "location": {
       "description": "The place where the organization is located.",
       "$ref" : "place_schema.json#"
