@@ -47,7 +47,7 @@
             }
         },
         "title" : {
-            "description" : "The name of the dataset, usually one sentece or short description of the dataset.",
+            "description" : "The name of the dataset, usually one sentence or short description of the dataset.",
             "type" : "string"
         },
         "description" : {
@@ -72,11 +72,11 @@
                 "$ref" : "place_schema.json#"
             }
         },
-        "types" : {
+        "types": {
             "description": "A term, ideally from a controlled terminology, identifying the dataset type or nature of the data, placing it in a typology",
             "type" : "array",
             "items" : {
-                "$ref" : "data_type_schema.json#"
+                "$ref": "annotation_schema.json#"
             },
             "minItems" : 1
         },
@@ -154,6 +154,13 @@
                 "$ref": "license_schema.json#"
             }
         },
+        "conformsTo" : {
+            "description": "A data standard whose requirements and constraints are met by the dataset.",
+            "type" : "array",
+            "items" : {
+            "$ref": "data_standard_schema.json#"
+          }
+        },
         "isAbout": {
             "description" : "Different entities (biological entity, taxonomic information, disease, molecular entity, anatomical part, treatment) associated with this dataset.",
             "type": "array",
@@ -167,6 +174,7 @@
                     {"$ref" : "treatment_schema.json#"},
                     {"$ref" : "material_schema.json#"},
                     {"$ref" : "study_group_schema.json#"},
+                    {"$ref" : "category_values_pair_schema.json#"},
                     {"$ref" : "annotation_schema.json#"}
                 ]
             }

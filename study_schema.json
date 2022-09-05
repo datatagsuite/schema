@@ -54,6 +54,10 @@
       "description": "A textual narrative comprised of one or more statements describing the study.",
       "type" : "string"
     },
+    "acronym": {
+      "description": "The short form of the study, usually related to the project name.",
+      "type": "string"
+    },
     "types": {
       "description": "The types of study (e.g. intervention or observation or meta-analysis or clinical trials, or behavioural study, or the study design).",
       "type": "array",
@@ -167,6 +171,13 @@
       "type": "array",
       "items": {
         "$ref": "study_group_schema.json#"
+      }
+    },
+    "characteristics" : {
+      "description": "The characteristic information or attributes associated with the study.",
+      "type" : "array",
+      "items" : {
+          "$ref": "dimension_schema.json#"
       }
     },
     "usesReagent": {

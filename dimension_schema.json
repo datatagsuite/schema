@@ -69,7 +69,10 @@
       "description": "The actual collections of values collected for that dimension.",
       "type": "array",
       "items": {
-          "$ref" : "annotation_schema.json#"
+        "anyOf": [
+          {"$ref" : "annotation_schema.json#"},
+          {"$ref" : "category_values_pair_schema.json#"}
+        ]
       }
     },
     "unit": {

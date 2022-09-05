@@ -64,6 +64,17 @@
          "$ref": "license_schema.json#"
       }
     },
+    "participant": {
+      "description": "The person providing the consent.",
+      "$ref": "person_schema.json"
+    },
+    "dates": {
+      "description": "A set of dates indicating the temporal coverage of the consent information for dynamic consent.",
+      "type": "array",
+      "items": {
+        "$ref": "date_info_schema.json"
+      }
+    },
     "extraProperties": {
       "description": "Extra properties that do not fit in the previous specified attributes. ",
       "type": "array",

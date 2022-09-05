@@ -111,6 +111,19 @@
         "type": "string"
       }
     },
+    "checksum": {
+      "description": "The checksum to verify the integrity of the dataset after download",
+      "type" : "string"
+    },
+    "checksumAlgorithm": {
+      "description": "The name of the algorithm used to generate the checksum, e.g. MD5 or SHA-256",
+      "anyOf": [
+        { "type" : "string" },
+        {
+          "$ref": "annotation_schema.json#"
+        }
+      ]
+    },
     "size": {
       "description": "The size of the dataset.",
       "type": "number"

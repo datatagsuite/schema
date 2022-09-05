@@ -101,5 +101,6 @@
       }
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "required" : [ "fullName" ]
 }
