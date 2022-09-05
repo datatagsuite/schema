@@ -1,6 +1,6 @@
 {
-  "id": "https://w3id.org/dats/schema/category_values_pair_schema.json",
-  "$schema": "http://json-schema.org/draft-04/schema",
+  "$id": "https://w3id.org/dats/schema/category_values_pair_schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "title": "DATS extension mechanism",
   "description": "Extension mechanism for DATS, which allows to add extra properties to the entities. It should be used only for cases where there are no specific properties to deal with the desired property.",
   "type": "object",
@@ -24,7 +24,9 @@
       "type": "string", "format": "uri" },
     "@type": {
       "description": "The JSON-LD type",
-      "type": "string", "enum": [ "CategoryValuesPair" ]},
+      "type": "string",
+      "const": "CategoryValuesPair"
+    },
     "category": {
       "description": "A characteristic or property about the entity this object is associated with.",
       "type": "string"

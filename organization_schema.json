@@ -1,6 +1,6 @@
 {
-  "id": "https://w3id.org/dats/schema/organization_schema.json",
-  "$schema": "http://json-schema.org/draft-04/schema",
+  "$id": "https://w3id.org/dats/schema/organization_schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "title": "DATS organization schema",
   "description": "Legal or physical entity corresponding to a business or administration.",
   "type": "object",
@@ -25,7 +25,9 @@
     },
     "@type": {
       "description": "The JSON-LD type",
-      "type": "string", "enum": [ "Organization" ]},
+      "type": "string",
+      "const": "Organization"
+    },
     "identifier": {
       "description": "The identifier of the organization.",
       "$ref": "identifier_info_schema.json#"
@@ -50,6 +52,15 @@
     },
     "abbreviation": {
       "description": "The shortname, abbreviation associated to the organization.",
+      "type" :  "string"
+    },
+    "email": {
+      "description": "An electronic mail address for the organization.",
+      "type" :  "string",
+      "format": "email"
+    },
+    "phoneNumber": {
+      "description": "A phone number for the organization.",
       "type" :  "string"
     },
     "location": {

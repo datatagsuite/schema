@@ -1,0 +1,151 @@
+{
+  "$id": "https://w3id.org/dats/schema/project_schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "DATS project schema",
+  "description": "An object to describe an research program supported investigation and studies through funding tools",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "description": "The JSON-LD context",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "@id": {
+      "description": "The JSON-LD identifier",
+      "type": "string", "format": "uri"
+    },
+    "@type": {
+      "description": "The JSON-LD type",
+      "type": "string",
+      "const": "Project"
+    },
+    "identifier": {
+      "description": "The identifier of the project.",
+      "$ref": "identifier_info_schema.json#"
+    },
+    "alternateIdentifiers": {
+      "description": "Alternate identifiers for the project.",
+      "type": "array",
+      "items": {
+        "$ref": "alternate_identifier_info_schema.json#"
+      }
+    },
+    "relatedIdentifiers": {
+      "description": "Related identifiers for the project.",
+      "type": "array",
+      "items": {
+        "$ref": "related_identifier_info_schema.json#"
+      }
+    },
+    "title": {
+      "description": "The name of the project.",
+      "type": "string"
+    },
+    "description" : {
+      "description": "A textual narrative comprised of one or more statements describing the project.",
+      "type" : "string"
+    },
+    "types": {
+      "description": "The types of project (e.g. safety assessment, drug discovery, innovative action), see IMI document for more examples.",
+      "type": "array",
+      "items": {
+        "$ref": "annotation_schema.json#"
+      }
+    },
+    "startDate": {
+      "description": "A timestamp to record the starting point of the activity.",
+      "$ref": "date_info_schema.json#"
+    },
+    "endDate": {
+      "description": "A timestamp to record the end point of the activity.",
+      "$ref": "date_info_schema.json#"
+    },
+    "dates" : {
+      "description": "Relevant dates for the datasets, a date must be added, e.g. creation date or last modification date should be added.",
+      "type" : "array",
+      "items" : {
+        "$ref" : "date_info_schema.json#"
+      }
+    },
+    "projectAssets":{
+      "description": "The person(s) or organisation(s) responsible for executing the project.",
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "study_schema.json#"
+          },
+          {
+            "$ref": "dataset_schema.json#"
+          }
+        ]
+        }
+    },
+  
+    "projectLeads": {
+      "description": "The person(s) or organisation(s) responsible for executing the project.",
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "person_schema.json#"
+          },
+          {
+            "$ref": "organization_schema.json#"
+          }
+        ]
+      }
+    },
+    "keywords": {
+      "description": "Tags associated with the activity, which will help in its discovery.",
+      "type": "array",
+      "items": {
+        "$ref": "annotation_schema.json#"
+      }
+    },
+    "fundedBy" : {
+            "description": "The grant(s) which funded and supported the work reported by the dataset.",
+            "type" : "array",
+            "items" : {
+                "$ref" : "grant_schema.json#"
+            }
+    },
+    "primaryPublications" : {
+      "description": "The primary publication(s) associated with the project.",
+      "type" : "array",
+      "items" : {
+          "$ref" : "publication_schema.json#"
+      }
+    },
+    "citations" : {
+        "description": "The publication(s) that cite this project.",
+        "type" : "array",
+        "items" : {
+            "$ref" : "publication_schema.json#"
+        }
+    },
+    "citationCount": {
+        "description": "The number of publications that cite this project",
+        "type": "integer"
+    },
+    "extraProperties": {
+      "description": "Extra properties that do not fit in the previous specified attributes. ",
+      "type": "array",
+      "items": {
+        "$ref" : "category_values_pair_schema.json#"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required" : [ "title", "types", "projectLeads" ]
+}
+

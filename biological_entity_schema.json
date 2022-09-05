@@ -1,6 +1,6 @@
 {
-  "id": "https://w3id.org/dats/schema/biological_entity_schema.json",
-  "$schema": "http://json-schema.org/draft-04/schema",
+  "$id": "https://w3id.org/dats/schema/biological_entity_schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "title": "DATS biological entity schema",
   "description": "A biological entity is a recognized entity covering biological process, molecular functions or cellular components (from: http://geneontology.org/).",
   "type": "object",
@@ -24,7 +24,9 @@
       "type": "string", "format": "uri" },
     "@type": {
       "description": "The JSON-LD type",
-      "type": "string", "enum": [ "BiologicalEntity" ]},
+      "type": "string",
+      "const": "BiologicalEntity"
+    },
     "identifier": {
       "description": "The identifier of the biological entity.",
       "$ref": "identifier_info_schema.json#"

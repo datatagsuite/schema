@@ -1,6 +1,6 @@
 {
-  "id": "https://w3id.org/dats/schema/dataset_distribution_schema.json",
-  "$schema": "http://json-schema.org/draft-04/schema",
+  "$id": "https://w3id.org/dats/schema/dataset_distribution_schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "title": "DATS dataset distribution schema",
   "description": "(From DCAT) Represents a specific available form of a dataset. Each dataset might be available in different forms, these forms might represent different formats of the dataset or different endpoints. Examples of distributions include a downloadable CSV file, an API or an RSS feed.",
   "type": "object",
@@ -25,7 +25,9 @@
     },
     "@type": {
       "description": "The JSON-LD type",
-      "type": "string", "enum": [ "DatasetDistribution" ]},
+      "type": "string",
+      "const": "DatasetDistribution"
+    },
     "identifier": {
       "description": "The identifier of the dataset distribution.",
       "$ref": "identifier_info_schema.json#"
