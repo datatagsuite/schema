@@ -55,6 +55,13 @@
       "description": "A textual narrative comprised of one or more statements describing the material.",
       "type": "string"
     },
+    "types": {
+      "description": "The types of material (e.g. cell line, tissue sample), ideally from a controlled vocabulary.",
+      "type": "array",
+      "items": {
+        "$ref": "annotation_schema.json#"
+      }
+    },
     "derivesFrom": {
       "description": "A material from which this material originated.",
       "type": "array",

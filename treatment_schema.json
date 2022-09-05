@@ -150,5 +150,5 @@
     }
   },
   "additionalProperties": false,
-  "required": [ "@type", "name", "input" ]
+  "required": [ "name", "input" ]
 }
