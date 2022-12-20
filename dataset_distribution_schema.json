@@ -108,7 +108,12 @@
       "description": "The technical format of the dataset distribution. Use the file extension or MIME type when possible. (Definition adapted from DataCite)",
       "type" : "array",
       "items" : {
-        "type": "string"
+        "anyOf": [
+          { "type" : "string" },
+          {
+            "$ref": "annotation_schema.json#"
+          }
+        ]
       }
     },
     "checksum": {
